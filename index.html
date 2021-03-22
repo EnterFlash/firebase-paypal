@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paypal Buttons Sample</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="/img/camera.jpg" alt="Camera">
+        <p>New Camera</p>
+        <p class="price">$100.00</p>
+
+        <div id="paypal-button"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-functions.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            // Your firebase config here ! 😃
+        };
+        
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=<<PAYPAL CLIENT ID>>&currency=USD"></script>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
